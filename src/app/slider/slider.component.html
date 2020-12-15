@@ -1,0 +1,12 @@
+
+<ngb-carousel  class="slider-element">
+    <ng-template *ngFor="let stadium of stadiums"   ngbSlide>
+        <div>
+            <img class="slider-img" src="{{stadium.image}}" alt="Random first slide">
+        </div>
+        <div class="slider-detalles">
+            <h3>Estadio {{stadium.name}}</h3>
+            <p>Ciudad {{stadium.city}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
